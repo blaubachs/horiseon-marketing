@@ -1,9 +1,11 @@
+/* This is a universal selector, making all of the elements on a page affected unless specified below. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* These next 4 are element selectors, meaning every element of this type will be affected by each corrosponding code. */
 body {
     background-color: #d9dcd6;
 }
@@ -25,6 +27,7 @@ p {
     font-size: 16px;
 } 
 
+/* Below are class selectors, affecting every class of it's type respectively. */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,12 +35,13 @@ p {
     color: #ffffff;
 }
 
+/* When another label is added after the class, it means that this "inline-block" and "font-size" are affecting only the h1 tag inside of the class ".header" */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
@@ -49,11 +53,8 @@ p {
     font-size: 20px;
 }
 
-.header section ul {
-    list-style-type: none;
-}
-
 .header section ul li {
+    list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
@@ -94,6 +95,7 @@ p {
     background-color: #2589bd;
 }
 
+/* The selectors below are combined because each of these are affected in the same way. When I add ".benefit-lead, .benefit-brand, .benefit-cost" separated by a comma, it applies the same rule to all listed before. */
 .benefit-lead,
 .benefit-brand,
 .benefit-cost {
