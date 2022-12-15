@@ -9,6 +9,8 @@ The goal of this project was to refactor code to be more accessible to any perso
 
 The only requirements for this application are to visit the link.
 
+https://blaubachs.github.io/horiseon-marketing/
+
 ## Usage
 
 Once on the page, it is able to be read and explored by anyone who has the link.
